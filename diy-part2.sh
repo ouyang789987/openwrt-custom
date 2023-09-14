@@ -15,4 +15,7 @@
 
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
-make menuconfig
+#make menuconfig
+make defconfig
+echo "CONFIG_PACKAGE_luci-app-oaf=y" >>.config  
+make defconfig  
